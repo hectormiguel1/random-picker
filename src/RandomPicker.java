@@ -9,7 +9,7 @@ public class RandomPicker {
             "Alfredo Palacios",
             "Jonathon Carrera",
             "Nylan Pierre",
-            "Lucas Moahlenbrock",
+            "Lucas Moehlenbrock",
             "Nigel Jennings",
             "Kyle McAllister",
             "Samuel Zewdu",
@@ -22,6 +22,7 @@ public class RandomPicker {
             "Anta Ndiaye",
             "Bennie Lee",
             "Deaz Nunoo",
+            "Even Timko"
     };
 
     private static final String GENERATE_RANDOM = "R";
@@ -38,7 +39,7 @@ public class RandomPicker {
                 System.out.println("Bye!");
                 quit = true;
             } else if(userInput.equalsIgnoreCase(GENERATE_RANDOM)) {
-                System.out.println("Person Picked: " + participants[rng.nextInt(participants.length)]);
+                System.out.println("Person Picked: " + participants[rng.nextInt(Integer.MAX_VALUE) % participants.length]);
             } else {
                 System.out.println("Wrong option passed try again. ");
             }
