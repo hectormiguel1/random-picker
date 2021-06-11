@@ -32,7 +32,7 @@ public class RandomPicker {
         Random rng = new Random();
         boolean quit = false;
         while(!quit) {
-            System.out.print("Press R to get a new random person, Q to quit. (Not case sensitive): ");
+            System.out.printf("Press %s to get a new random person, %s to quit. (Not case sensitive): ", GENERATE_RANDOM, QUIT);
             String userInput = input.next();
             if(userInput.equalsIgnoreCase(QUIT)) {
                 System.out.println("Bye!");
